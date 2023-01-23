@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Ankur Dixit | UX Designer</title>
         <meta name="Ankur Dixit UX Designer" content="Ankur Dixit UX Designer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/vercel.svg" />
       </Head>
       <Navbar />
     </>
