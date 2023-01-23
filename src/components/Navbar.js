@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
-import { FaLinkedin, FaGithub, FaFreeCodeCamp } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFreeCodeCamp } from "react-icons/fa";
 import { motion, useScroll } from "framer-motion";
 
 const Navbar = () => {
@@ -17,27 +17,70 @@ const Navbar = () => {
         <Image src="/NA.png" alt="/" width="75" height="50" className="" />
         <div>
           <ul className="hidden md:flex">
-            <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                My Work
-              </li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                My Story
-              </li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
-            </Link>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+            >
+              <Link href="/#home">
+                <li className="px-5 text-sm uppercase hover:border-b">Home</li>
+              </Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 mx-2 w-20"
+            >
+              <Link href="/#projects">
+                <li className="px-5 text-sm uppercase hover:border-b">
+                  Work
+                </li>
+              </Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+            >
+              <Link href="/#about">
+                <li className="px-5 text-sm uppercase hover:border-b">
+                  About
+                </li>
+              </Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+            >
+              <Link href="/#skills">
+                <li className="px-5 text-sm uppercase hover:border-b">Skills</li>
+              </Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+            >
+              <Link href="/#contact">
+                <li className="px-5 text-sm uppercase hover:border-b">Contact</li>
+              </Link>
+            </motion.div>
           </ul>
         </div>
         <div onClick={handleNav} className="md:hidden cursor-pointer">
@@ -110,7 +153,7 @@ const Navbar = () => {
               <div className="flex items-center justify-around my-6 w-full sm:w[80%] text-3xl">
                 <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
                   <Link
-                    href="https://www.linkedin.com/in/nafis-anwar-1a6a0a141/"
+                    href="https://www.linkedin.com/in/ankur-d-4820a1244/"
                     target="_blank"
                   >
                     <FaLinkedin />
@@ -118,11 +161,11 @@ const Navbar = () => {
                 </div>
                 <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
                   <Link href="https://github.com/Nafis3000" target="_blank">
-                    <FaGithub />
+                    <FaInstagram />
                   </Link>
                 </div>
                 <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
-                  <Link href="mailto:nafis.3000@gmail.com" target="_blank">
+                  <Link href="mailto:ankdixit097@gmail.com" target="_blank">
                     <AiOutlineMail />
                   </Link>
                 </div>
