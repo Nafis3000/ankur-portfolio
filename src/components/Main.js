@@ -35,11 +35,14 @@ const Main = () => {
             whileInView={"visible"}
           >
             <motion.h2 className="text-6xl tracking-widest pt-8 text-slate-100 text-center">
-                <motion.span>Hello, my name is </motion.span>
-                <motion.span className="bg-lime-400 text-black">Ankur</motion.span>
+              <motion.span>Hello, my name is </motion.span>
+              <motion.span className="bg-lime-400 text-black">
+                Ankur
+              </motion.span>
             </motion.h2>
             <motion.h2 className=" text-6xl tracking-widest pb-8 text-slate-100 text-center">
-              I <motion.span className="text-red-400">design</motion.span> and <motion.span className="text-blue-300">develop</motion.span>.
+              I <motion.span className="text-red-400">design</motion.span> and{" "}
+              <motion.span className="text-blue-300">develop</motion.span>.
             </motion.h2>
             <motion.p
               className="py-2 text-md text-slate-100"
@@ -69,17 +72,14 @@ const Main = () => {
               create beautiful and functional websites and applications.
             </motion.p>
           </motion.div>
+        
           <motion.div
             initial={{ opacity: 0, y: "5rem" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 dark:shadow-black"
+            className="w-full h-auto m-auto  shadow-gray-400 rounded-xl flex items-center justify-center dark:shadow-black"
           >
-            <img
-              className="rounded-xl"
-              src="/ankurdixit.jpg"
-              alt="about"
-            />
+            <img  src="/ankurdixit.jpg" alt="about" />
           </motion.div>
         </motion.div>
       </motion.div>
