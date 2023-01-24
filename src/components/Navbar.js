@@ -14,7 +14,13 @@ const Navbar = () => {
   return (
     <motion.div className="fixed w-full h-19 shadow-2xl z-[100] bg-slate-100">
       <motion.div className="flex justify-between items-center w-full h-full pr-2 2xl:px-16">
-        <Image src="Logo.svg" alt="/" width="200" height="100" className="mx-2" />
+        <Image
+          src="Logo.svg"
+          alt="/"
+          width="200"
+          height="100"
+          className="mx-2"
+        />
         <div>
           <ul className="hidden md:flex">
             <motion.div
@@ -38,9 +44,7 @@ const Navbar = () => {
               className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 mx-2 w-20"
             >
               <Link href="/#projects">
-                <li className="px-5 text-sm uppercase">
-                  Work
-                </li>
+                <li className="px-5 text-sm uppercase">Work</li>
               </Link>
             </motion.div>
             <motion.div
@@ -52,9 +56,7 @@ const Navbar = () => {
               className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
             >
               <Link href="/#about">
-                <li className="px-5 text-sm uppercase ">
-                  About
-                </li>
+                <li className="px-5 text-sm uppercase ">About</li>
               </Link>
             </motion.div>
             <motion.div
