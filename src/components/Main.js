@@ -72,14 +72,14 @@ const Main = () => {
               create beautiful and functional websites and applications.
             </motion.p>
           </motion.div>
-        
+
           <motion.div
             initial={{ opacity: 0, y: "5rem" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="w-full h-auto m-auto  shadow-gray-400 rounded-xl flex items-center justify-center dark:shadow-black"
+            className="w-full h-auto m-auto  shadow-gray-400 rounded-xl flex items-center justify-center"
           >
-            <img  src="/ankurdixit.jpg" alt="about" />
+            <img src="/ankurdixit.jpg" alt="about" />
           </motion.div>
         </motion.div>
       </motion.div>

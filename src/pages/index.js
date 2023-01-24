@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import { motion } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
+import Skills from '@/components/Skills'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
+      <Skills />
     </>
   );
 }
