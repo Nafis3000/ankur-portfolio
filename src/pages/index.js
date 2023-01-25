@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,11 +13,15 @@ export default function Home() {
     <>
       <Head>
         <title>Ankur Dixit | UX Designer</title>
-        <meta name="Ankur Dixit UX Designer" content="Ankur Dixit UX Designer" />
+        <meta
+          name="Ankur Dixit UX Designer"
+          content="Ankur Dixit UX Designer"
+        />
         <link rel="icon" href="/vercel.svg" />
       </Head>
       <Navbar />
       <Main />
+      <Projects />
       <Skills />
     </>
   );

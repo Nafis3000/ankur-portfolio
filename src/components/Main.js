@@ -25,7 +25,7 @@ const Main = () => {
     <>
       <motion.div
         id="home"
-        className="w-full md:h-screen p-2 flex items-center py-8 bg-zinc-900"
+        className="w-full md:h-screen p-2 flex items-center py-8 bg-white "
       >
         <motion.div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
           <motion.div
@@ -34,25 +34,25 @@ const Main = () => {
             initial={"hidden"}
             whileInView={"visible"}
           >
-            <motion.h2 className="text-6xl tracking-widest pt-8 text-slate-100 text-center">
+            <motion.h2 className="text-6xl tracking-widest pt-8 text-slate-900 text-center">
               <motion.span>Hello, my name is </motion.span>
               <motion.span className="bg-lime-400 text-black">
                 Ankur
               </motion.span>
             </motion.h2>
-            <motion.h2 className=" text-6xl tracking-widest pb-8 text-slate-100 text-center">
+            <motion.h2 className=" text-6xl tracking-widest pb-8 text-slate-900 text-center">
               I <motion.span className="text-red-400">design</motion.span> and{" "}
-              <motion.span className="text-blue-300">develop</motion.span>.
+              <motion.span className="text-blue-400">develop</motion.span>.
             </motion.h2>
             <motion.p
-              className="py-2 text-md text-slate-100"
+              className="py-2 text-md text-slate-900"
               variants={pVariant}
             >
               I have always had a passion for technology and design, and I
               recently decided to turn that passion into a career.
             </motion.p>
             <motion.p
-              className="py-2 text-md text-slate-100"
+              className="py-2 text-md text-slate-900"
               variants={pVariant}
             >
               I have been learning and practicing web development skills through
@@ -63,7 +63,7 @@ const Main = () => {
               my skills.
             </motion.p>
             <motion.p
-              className="py-2 text-md text-slate-100"
+              className="py-2 text-md text-slate-900"
               variants={pVariant}
             >
               I am a strong believer in the power of collaboration and teamwork,

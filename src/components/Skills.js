@@ -12,7 +12,7 @@ const Skills = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         when: "beforeChildren",
         staggerChildren: 0.3,
       },
@@ -27,7 +27,7 @@ const Skills = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "linear",
         when: "beforeChildren",
         staggerChildren: 0.3,
@@ -49,7 +49,7 @@ const Skills = () => {
   };
 
   return (
-    <motion.div id="skills" className="w-full lg:h-screen p-2 ">
+    <motion.div id="skills" className="w-full lg:h-screen p-5">
       <motion.div
         className="max-w-[1240px] mx-auto flex flex-col justify-center h-full"
         variants={mainVariants}

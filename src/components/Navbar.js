@@ -29,9 +29,9 @@ const Navbar = () => {
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.9 }}
-              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+              className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#home">
+              <Link href="/#home" scroll={false}>
                 <li className="px-5 text-sm uppercase">Home</li>
               </Link>
             </motion.div>
@@ -41,9 +41,9 @@ const Navbar = () => {
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.9 }}
-              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 mx-2 w-20"
+              className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
             >
-              <Link href="/#projects">
+              <Link href="/#projects" scroll={false}>
                 <li className="px-5 text-sm uppercase">Work</li>
               </Link>
             </motion.div>
@@ -53,9 +53,9 @@ const Navbar = () => {
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.9 }}
-              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+              className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#about">
+              <Link href="/#about" scroll={false}>
                 <li className="px-5 text-sm uppercase ">About</li>
               </Link>
             </motion.div>
@@ -65,9 +65,9 @@ const Navbar = () => {
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.9 }}
-              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+              className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#skills">
+              <Link href="/#skills" scroll={false}>
                 <li className="px-5 text-sm uppercase ">Skills</li>
               </Link>
             </motion.div>
@@ -77,9 +77,9 @@ const Navbar = () => {
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.9 }}
-              className="bg-gradient-to-b from-slate-50 to-gray-300 flex items-center justify-center h-8 w-20 mx-2"
+              className="hover:underline flex items-center justify-center h-8 w-20 mx-2"
             >
-              <Link href="/#contact">
+              <Link href="/#contact" scroll={false}>
                 <li className="px-5 text-sm uppercase">Contact</li>
               </Link>
             </motion.div>
@@ -124,25 +124,25 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase ml-3">
-              <Link href="/#home" onClick={handleNav}>
+              <Link href="/#home" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">Home</li>
               </Link>
-              <Link href="/#projects" onClick={handleNav}>
+              <Link href="/#projects" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
                   My Work
                 </li>
               </Link>
-              <Link href="/#about" onClick={handleNav}>
+              <Link href="/#about" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
                   My Story
                 </li>
               </Link>
-              <Link href="/#skills" onClick={handleNav}>
+              <Link href="/#skills" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
                   Skills
                 </li>
               </Link>
-              <Link href="/#contact" onClick={handleNav}>
+              <Link href="/#contact" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
                   Contact
                 </li>
