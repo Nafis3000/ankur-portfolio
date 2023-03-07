@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <motion.div className="fixed w-full h-19 shadow-2xl z-[100] bg-black">
-      <motion.div className="flex justify-between items-center w-full h-full pr-2 2xl:px-16">
+      <motion.div className="flex justify-between items-center w-full h-full">
         <Image
           src="Logo.svg"
           alt="/"
@@ -74,7 +74,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div onClick={handleNav} className="md:hidden cursor-pointer">
-          <AiOutlineMenu size={25} className="text-2xl" />
+          <AiOutlineMenu size={25} className="text-2xl text-white" />
         </div>
       </motion.div>
 
