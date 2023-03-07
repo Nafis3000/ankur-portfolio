@@ -36,7 +36,7 @@ export default function Projects() {
     <>
       <motion.div
         id="projects"
-        className="w-full md:h-full p-2 flex items-center py-12 bg-gradient-to-b from-lime-300 to-cyan-300 "
+        className="w-full md:h-full p-2 flex items-center py-12 bg-gradient-to-b from-lime-300 to-cyan-300 py-20"
       >
         <motion.div
           className="w-full max-w-[1240px] m-auto flex flex-col gap-10 justify-evenly"

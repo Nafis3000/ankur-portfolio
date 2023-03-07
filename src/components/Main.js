@@ -24,8 +24,8 @@ const Main = () => {
   return (
     <>
       <motion.div
-        id="home"
-        className="w-full md:h-screen p-2 flex items-center py-8 bg-white "
+        id="work"
+        className="w-full md:h-screen p-2 flex items-center py-8 bg-gradient-to-b from-violet-300 to-slate-50 "
       >
         <motion.div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
           <motion.div

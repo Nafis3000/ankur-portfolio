@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <motion.div className="fixed w-full h-19 shadow-2xl z-[100] bg-slate-100">
+    <motion.div className="fixed w-full h-19 shadow-2xl z-[100] bg-black">
       <motion.div className="flex justify-between items-center w-full h-full pr-2 2xl:px-16">
         <Image
           src="Logo.svg"
@@ -22,7 +22,7 @@ const Navbar = () => {
           className="mx-2"
         />
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex text-white">
             <motion.div
               whileHover={{
                 scale: 1.1,
@@ -31,8 +31,8 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#home" scroll={false}>
-                <li className="px-5 text-sm uppercase">Home</li>
+              <Link href="/#work" scroll={false}>
+                <li className="px-5 text-sm uppercase">Work</li>
               </Link>
             </motion.div>
             <motion.div
@@ -43,20 +43,8 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
             >
-              <Link href="/#projects" scroll={false}>
-                <li className="px-5 text-sm uppercase">Work</li>
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5, ease: "easeInOut" },
-              }}
-              whileTap={{ scale: 0.9 }}
-              className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-            >
               <Link href="/#about" scroll={false}>
-                <li className="px-5 text-sm uppercase ">About</li>
+                <li className="px-5 text-sm uppercase">About</li>
               </Link>
             </motion.div>
             <motion.div
@@ -66,21 +54,21 @@ const Navbar = () => {
               }}
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-            >
-              <Link href="/#skills" scroll={false}>
-                <li className="px-5 text-sm uppercase ">Skills</li>
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.5, ease: "easeInOut" },
-              }}
-              whileTap={{ scale: 0.9 }}
-              className="hover:underline flex items-center justify-center h-8 w-20 mx-2"
             >
               <Link href="/#contact" scroll={false}>
-                <li className="px-5 text-sm uppercase">Contact</li>
+                <li className="px-5 text-sm uppercase ">Contact</li>
+              </Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+            >
+              <Link href="/#resume" scroll={false}>
+                <li className="px-5 text-sm uppercase ">Resume</li>
               </Link>
             </motion.div>
           </ul>
@@ -124,27 +112,22 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase ml-3">
-              <Link href="/#home" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">Home</li>
-              </Link>
-              <Link href="/#projects" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">
-                  My Work
-                </li>
+              <Link href="/#work" onClick={handleNav} scroll={false}>
+                <li className="py-4 text-sm border-b border-gray-300">Work</li>
               </Link>
               <Link href="/#about" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
-                  My Story
-                </li>
-              </Link>
-              <Link href="/#skills" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">
-                  Skills
+                  About
                 </li>
               </Link>
               <Link href="/#contact" onClick={handleNav} scroll={false}>
                 <li className="py-4 text-sm border-b border-gray-300">
                   Contact
+                </li>
+              </Link>
+              <Link href="/#resume" onClick={handleNav} scroll={false}>
+                <li className="py-4 text-sm border-b border-gray-300">
+                  Resume
                 </li>
               </Link>
             </ul>
