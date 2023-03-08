@@ -14,6 +14,7 @@ const Navbar = () => {
   return (
     <motion.div className="fixed w-full h-19 shadow-2xl z-[100] bg-black">
       <motion.div className="flex justify-between items-center w-full h-full">
+        <Link href="/">
         <Image
           src="Logo.svg"
           alt="/"
@@ -21,6 +22,7 @@ const Navbar = () => {
           height="100"
           className="mx-2"
         />
+        </Link>
         <div>
           <ul className="hidden md:flex text-white">
             <motion.div
@@ -31,7 +33,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#work" scroll={false}>
+              <Link href="/" scroll={false}>
                 <li className="px-5 text-sm uppercase">Work</li>
               </Link>
             </motion.div>
@@ -43,7 +45,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
             >
-              <Link href="/#about" scroll={false}>
+              <Link href="/about" scroll={false}>
                 <li className="px-5 text-sm uppercase">About</li>
               </Link>
             </motion.div>
@@ -55,7 +57,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#contact" scroll={false}>
+              <Link href="/contact" scroll={false}>
                 <li className="px-5 text-sm uppercase ">Contact</li>
               </Link>
             </motion.div>

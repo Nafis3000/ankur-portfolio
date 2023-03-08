@@ -1,12 +1,7 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import { motion } from "framer-motion";
-import Work from "@/components/Work";
-import Navbar from "@/components/Navbar";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Contact = () => {
   return (
     <>
       <Head>
@@ -23,8 +18,11 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Navbar />
-      <Work />
+      <div className="flex flex-col h-full bg-gradient-to-b from-blue-800 to-rose-400">
+        Contact
+      </div>
     </>
   );
-}
+};
+
+export default Contact;
